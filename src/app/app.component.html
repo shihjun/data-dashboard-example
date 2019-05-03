@@ -1,5 +1,21 @@
-<h3>Bar Chart: Laptop Profit by year by model</h3>
-<app-bar-chart></app-bar-chart>
-<!-- 
-<h3>Pie Chart: Laptop Sales By Model</h3>
-<app-pie-chart></app-pie-chart> -->
+
+<h3>Pie Chart: Number of likes per tag</h3>
+<app-all-purpose-chart 
+    [chartType]="'pie'" 
+    [chartData]="numberOfLikesPerTag.data" 
+    [chartLabels]="numberOfLikesPerTag.labels"></app-all-purpose-chart> 
+<h3>Pie Chart: Number of images per tag</h3>
+<app-all-purpose-chart 
+    [chartType]="'pie'" 
+    [chartData]="numberOfImagesPerTag.data" 
+    [chartLabels]="numberOfImagesPerTag.labels"></app-all-purpose-chart>
+<h3>Bar Chart: Number of likes per tag per month</h3>
+<app-all-purpose-chart 
+    [chartType]="'bar'" 
+    [chartData]="numberOfLikesPerImagePerTag.data" 
+    [chartLabels]="numberOfLikesPerImagePerTag.labels"></app-all-purpose-chart>
+<h4>Line Chart: Number of images per month</h4>
+<app-all-purpose-chart 
+    [chartType]="'line'" 
+    [chartData]="numberOfImagesPerMonth.data" 
+    [chartLabels]="numberOfImagesPerMonth.labels"></app-all-purpose-chart>

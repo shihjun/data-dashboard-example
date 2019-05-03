@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import movieUserPreference from '../../movieUserPreference'
 
 @Component({
-  selector: 'app-pie-chart',
-  templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.css']
+  selector: 'app-line-chart',
+  templateUrl: './line-chart.component.html',
+  styleUrls: ['./line-chart.component.css']
 })
-export class PieChartComponent implements OnInit {
-  chartType = "pie"
+export class LineChartComponent implements OnInit {
+  chartType = "line"
   @Input() chartData = []
   // [
   //  { data: [1,2,3,4]} 
